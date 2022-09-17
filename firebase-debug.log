@@ -1,0 +1,21 @@
+[debug] [2022-09-17T00:15:50.254Z] ----------------------------------------------------------------------
+[debug] [2022-09-17T00:15:50.256Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\nraug\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-09-17T00:15:50.256Z] CLI Version:   11.8.1
+[debug] [2022-09-17T00:15:50.256Z] Platform:      win32
+[debug] [2022-09-17T00:15:50.256Z] Node Version:  v16.17.0
+[debug] [2022-09-17T00:15:50.257Z] Time:          Fri Sep 16 2022 17:15:50 GMT-0700 (Pacific Daylight Time)
+[debug] [2022-09-17T00:15:50.257Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-17T00:15:50.316Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-17T00:15:50.316Z] > authorizing via signed-in user (nraugnaagmouaa@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project clone-16516. This may result in unexpected behavior. 
+[debug] [2022-09-17T00:15:50.333Z] [hub] writing locator at C:\Users\nraug\AppData\Local\Temp\hub-clone-16516.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage, eventarc {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage, eventarc\u001b[22m"}}
+[warn] !  Your requested "node" version "10" doesn't match your global version "16". Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"10\" doesn't match your global version \"16\". Using node@16 from host."}}
+[debug] [2022-09-17T00:15:50.359Z] defaultcredentials: writing to file C:\Users\nraug\AppData\Roaming\firebase\nraugnaagmouaa_gmail_com_application_default_credentials.json
+[debug] [2022-09-17T00:15:50.360Z] Setting GAC to C:\Users\nraug\AppData\Roaming\firebase\nraugnaagmouaa_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\nraug\\AppData\\Roaming\\firebase\\nraugnaagmouaa_gmail_com_application_default_credentials.json"}}
+[debug] [2022-09-17T00:15:50.362Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-16516/adminSdkConfig [none]
+[debug] [2022-09-17T00:15:50.574Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-16516/adminSdkConfig 200
+[debug] [2022-09-17T00:15:50.574Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-16516/adminSdkConfig {"projectId":"clone-16516","storageBucket":"clone-16516.appspot.com"}
+[debug] [2022-09-17T00:15:50.587Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-16516/sites 

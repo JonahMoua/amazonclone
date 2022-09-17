@@ -49,7 +49,7 @@ function Payment() {
                 card: elements.getElement(CardElement)
             }
         }).then(({ paymentIntent }) => {
-            // paymentIntent = payment confirmation
+           
 
             db
               .collection('users')
@@ -70,14 +70,13 @@ function Payment() {
                 type: 'EMPTY_BASKET'
             })
 
-            history.replace('/orders')
+            history.replace('/')
         })
 
     }
 
     const handleChange = event => {
-        // Listen for changes in the CardElement
-        // and display any errors as the customer types their card details
+
         setDisabled(event.empty);
         setError(event.error ? event.error.message : "");
     }
@@ -92,7 +91,7 @@ function Payment() {
                 </h1>
 
 
-                {/* Payment section - delivery address */}
+           
                 <div className='payment__section'>
                     <div className='payment__title'>
                         <h3>Delivery Address</h3>
@@ -104,7 +103,7 @@ function Payment() {
                     </div>
                 </div>
 
-                {/* Payment section - Review Items */}
+              
                 <div className='payment__section'>
                     <div className='payment__title'>
                         <h3>Review items and delivery</h3>
@@ -123,13 +122,13 @@ function Payment() {
                 </div>
             
 
-                {/* Payment section - Payment method */}
+             
                 <div className='payment__section'>
                     <div className="payment__title">
                         <h3>Payment Method</h3>
                     </div>
                     <div className="payment__details">
-                            {/* Stripe magic will go */}
+                           
 
                             <form onSubmit={handleSubmit}>
                                 <CardElement onChange={handleChange}/>
@@ -150,7 +149,7 @@ function Payment() {
                                     </button>
                                 </div>
 
-                                  {/* Errors */}
+                              
                                 {error && <div>{error}</div>}
                             </form>
                     </div>

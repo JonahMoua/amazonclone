@@ -8,7 +8,7 @@
 
 
   <h3 align="center">Amazon Fullstack</h3>
-  <a href= "https://clone-16516.web.app/">Demo</a>
+  <a href= "//clone-16516.firebaseapp.com">Demo</a>
 
 </div>
 
